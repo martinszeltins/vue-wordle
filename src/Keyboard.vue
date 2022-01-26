@@ -58,15 +58,18 @@
         margin: 30px 8px 0;
         user-select: none;
     }
+
     .row {
         display: flex;
         width: 100%;
         margin: 0 auto 8px;
         touch-action: manipulation;
     }
+
     .spacer {
         flex: 0.5;
     }
+
     button {
         font-family: inherit;
         font-weight: bold;
@@ -87,9 +90,11 @@
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
         transition: all 0.2s 1.5s;
     }
+
     button:last-of-type {
         margin: 0;
     }
+    
     button.big {
         flex: 1.5;
     }
