@@ -138,7 +138,8 @@
             // first pass: mark correct ones
             currentRow.forEach((tile, i) => {
                 if (answerLetters[i] === tile.letter) {
-                    tile.state = letterStates[tile.letter] = LetterState.CORRECT
+                    tile.state = LetterState.CORRECT
+                    letterStates[tile.letter] = LetterState.CORRECT
                     answerLetters[i] = null
                 }
             })
