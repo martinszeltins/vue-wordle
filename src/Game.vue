@@ -16,6 +16,7 @@
     <div id="board">
         <div
             v-for="(row, index) in board"
+            :key="index"
             :class="[
                 'row',
                 shakeRowIndex === index && 'shake',
@@ -24,6 +25,7 @@
 
             <div
                 v-for="(tile, index) in row"
+                :key="index"
                 :class="['tile', tile.letter && 'filled', tile.state && 'revealed']">
 
                 <div
